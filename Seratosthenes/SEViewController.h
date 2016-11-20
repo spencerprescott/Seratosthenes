@@ -10,5 +10,7 @@
 @class SEViewModel;
 
 @interface SEViewController : UIViewController
+@property (strong, nonatomic) SEViewModel *viewModel;
+
 - (instancetype)initWithViewModel:(SEViewModel *)viewModel;
 @end

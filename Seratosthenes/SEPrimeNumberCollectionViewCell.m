@@ -18,6 +18,7 @@
 - (void)updateWithViewModel:(SEPrimeNumberViewModel *)viewModel {
     [super updateWithViewModel:viewModel];
     self.numberLabel.text = viewModel.numberString;
+    self.backgroundColor = [UIColor colorWithHue:viewModel.hue saturation:viewModel.saturation brightness:viewModel.brightness alpha:1];
 }
 
 @end

@@ -10,19 +10,9 @@
 #import "SEViewModel.h"
 
 @interface SEViewController ()
-@property (strong, nonatomic) SEViewModel *viewModel;
 @end
 
 @implementation SEViewController
-
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        _viewModel = [SEViewModel new];
-    }
-    
-    return self;
-}
 
 - (instancetype)initWithViewModel:(SEViewModel *)viewModel {
     self = [super init];

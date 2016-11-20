@@ -10,4 +10,6 @@
 
 @implementation SECollectionViewCell
 
+- (void)updateWithViewModel:(SEViewModel *)viewModel {}
+
 @end

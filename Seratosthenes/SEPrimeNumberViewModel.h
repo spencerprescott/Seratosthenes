@@ -12,9 +12,9 @@
 /** Display text for prime number */
 @property (copy, nonatomic, readonly) NSString *numberString;
 /** Color values */
-@property (nonatomic, readonly) float redValue;
-@property (nonatomic, readonly) float blueValue;
-@property (nonatomic, readonly) float greenValue;
+@property (nonatomic, readonly) float hue;
+@property (nonatomic, readonly) float saturation;
+@property (nonatomic, readonly) float brightness;
 
 
 - (instancetype)initWithPrimeNumber:(NSNumber *)primeNumber;
