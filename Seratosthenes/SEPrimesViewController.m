@@ -41,6 +41,11 @@ static void *SEPrimesContext = &SEPrimesContext;
     [self.viewModel updateLimit:self.primesTextField.text];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.primesTextField becomeFirstResponder];
+}
+
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     [self.viewModel removeObserver:self forKeyPath:NSStringFromSelector(@selector(primeNumberViewModels)) context:SEPrimesContext];
@@ -61,6 +66,10 @@ static void *SEPrimesContext = &SEPrimesContext;
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.viewModel.primeNumberViewModels.count;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    [self.primesTextField resignFirstResponder];
 }
 
 #pragma mark - UITextFieldDelegate

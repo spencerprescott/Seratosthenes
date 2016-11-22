@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Primes View Controller-->
+        <!--Prime Numbers-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SEPrimesViewController" sceneMemberID="viewController">
@@ -23,39 +23,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prime numbers up to:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cic-V7-V0l">
-                                <rect key="frame" x="16" y="64" width="164.5" height="21"/>
+                                <rect key="frame" x="16" y="64" width="164.5" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="3cq-g2-wen"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="100" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9CH-4O-Mcu">
-                                <rect key="frame" x="180.5" y="64" width="178.5" height="21"/>
+                                <rect key="frame" x="185.5" y="65" width="173.5" height="45"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="go"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Y1L-q3-IOy"/>
                                 </connections>
                             </textField>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4us-fJ-0Gc">
-                                <rect key="frame" x="16" y="85" width="343" height="582"/>
+                                <rect key="frame" x="16" y="109" width="343" height="558"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FoG-eb-HU9">
-                                    <size key="itemSize" width="86" height="68"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="5" maxX="0.0" maxY="5"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="FoG-eb-HU9">
+                                    <size key="itemSize" width="80" height="80"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="5" maxX="0.0" maxY="5"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SEPrimeNumberCollectionViewCell" id="Vqr-PN-g3U" customClass="SEPrimeNumberCollectionViewCell">
-                                        <rect key="frame" x="0.0" y="0.0" width="86" height="68"/>
+                                        <rect key="frame" x="0.0" y="5" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="86" height="68"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQZ-7g-dNE">
-                                                    <rect key="frame" x="8" y="8" width="70" height="52"/>
+                                                    <rect key="frame" x="35" y="30" width="10.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -63,10 +67,8 @@
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstAttribute="trailingMargin" secondItem="eQZ-7g-dNE" secondAttribute="trailing" id="4cu-0u-AES"/>
-                                            <constraint firstItem="eQZ-7g-dNE" firstAttribute="leading" secondItem="Vqr-PN-g3U" secondAttribute="leadingMargin" id="A84-Db-F3o"/>
-                                            <constraint firstItem="eQZ-7g-dNE" firstAttribute="top" secondItem="Vqr-PN-g3U" secondAttribute="topMargin" id="PIo-tY-NpK"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="eQZ-7g-dNE" secondAttribute="bottom" id="yNW-F7-d1h"/>
+                                            <constraint firstItem="eQZ-7g-dNE" firstAttribute="centerX" secondItem="Vqr-PN-g3U" secondAttribute="centerX" id="q2C-zS-0eB"/>
+                                            <constraint firstItem="eQZ-7g-dNE" firstAttribute="centerY" secondItem="Vqr-PN-g3U" secondAttribute="centerY" id="xil-tg-NYK"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="numberLabel" destination="eQZ-7g-dNE" id="K5U-8y-ufY"/>
@@ -84,16 +86,16 @@
                             <constraint firstItem="cic-V7-V0l" firstAttribute="height" secondItem="9CH-4O-Mcu" secondAttribute="height" id="0is-5G-IFT"/>
                             <constraint firstItem="cic-V7-V0l" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2yD-gC-yJc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9CH-4O-Mcu" secondAttribute="trailing" id="DK4-PQ-JRo"/>
-                            <constraint firstItem="9CH-4O-Mcu" firstAttribute="leading" secondItem="cic-V7-V0l" secondAttribute="trailing" id="KwN-R1-Um7"/>
+                            <constraint firstItem="9CH-4O-Mcu" firstAttribute="leading" secondItem="cic-V7-V0l" secondAttribute="trailing" constant="5" id="KwN-R1-Um7"/>
                             <constraint firstItem="cic-V7-V0l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="OWX-iA-ej3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4us-fJ-0Gc" secondAttribute="trailing" id="T6B-mc-WN3"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4us-fJ-0Gc" secondAttribute="bottom" id="TX6-TW-Zvw"/>
-                            <constraint firstItem="9CH-4O-Mcu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="j5C-ct-CPO"/>
+                            <constraint firstItem="9CH-4O-Mcu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="1" id="j5C-ct-CPO"/>
                             <constraint firstItem="4us-fJ-0Gc" firstAttribute="top" secondItem="cic-V7-V0l" secondAttribute="bottom" id="mIh-yu-5OZ"/>
                             <constraint firstItem="4us-fJ-0Gc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qny-MK-yPx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="NvK-pL-Dl6"/>
+                    <navigationItem key="navigationItem" title="Prime Numbers" id="NvK-pL-Dl6"/>
                     <connections>
                         <outlet property="collectionView" destination="4us-fJ-0Gc" id="0Gn-JO-XIN"/>
                         <outlet property="primesTextField" destination="9CH-4O-Mcu" id="1gf-9F-mkr"/>
