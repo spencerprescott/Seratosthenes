@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SEScreens.h"
 @class SEViewModel;
 
 @interface SEViewController : UIViewController
+/** View model that subclass must declare */
 @property (strong, nonatomic) SEViewModel *viewModel;
 
-- (instancetype)initWithViewModel:(SEViewModel *)viewModel;
+- (void)presentScreen:(NSString *)screen withViewModel:(SEViewModel *)viewModel;
+- (void)pushScreen:(NSString *)screen withViewModel:(SEViewModel *)viewModel;
+- (void)dismissScreen;
 @end

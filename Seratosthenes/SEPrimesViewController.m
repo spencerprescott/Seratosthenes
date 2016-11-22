@@ -68,6 +68,13 @@ static void *SEPrimesContext = &SEPrimesContext;
     return self.viewModel.primeNumberViewModels.count;
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [self presentScreen:SEPrimeNumberDetailScreen withViewModel:self.viewModel.primeNumberViewModels[indexPath.item]];
+}
+
+#pragma mark - UIScrollViewDelegate
+
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     [self.primesTextField resignFirstResponder];
 }

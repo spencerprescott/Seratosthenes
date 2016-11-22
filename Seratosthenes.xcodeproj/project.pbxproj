@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		AB7A21361DE16D23003CC3DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A21351DE16D23003CC3DF /* main.m */; };
 		AB7A21391DE16D23003CC3DF /* SEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A21381DE16D23003CC3DF /* SEAppDelegate.m */; };
-		AB7A213F1DE16D23003CC3DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB7A213D1DE16D23003CC3DF /* Main.storyboard */; };
+		AB7A213F1DE16D23003CC3DF /* SEPrimesStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB7A213D1DE16D23003CC3DF /* SEPrimesStoryboard.storyboard */; };
 		AB7A21411DE16D23003CC3DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB7A21401DE16D23003CC3DF /* Assets.xcassets */; };
 		AB7A21441DE16D23003CC3DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB7A21421DE16D23003CC3DF /* LaunchScreen.storyboard */; };
 		AB7A215D1DE16EFF003CC3DF /* SEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A215C1DE16EFF003CC3DF /* SEViewController.m */; };
@@ -22,6 +22,8 @@
 		AB7A21761DE174E2003CC3DF /* SEPrimesGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A21751DE174E2003CC3DF /* SEPrimesGenerator.m */; };
 		AB7A21781DE177AE003CC3DF /* SEPrimesGeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A21771DE177AE003CC3DF /* SEPrimesGeneratorTests.m */; };
 		AB7A21791DE177E9003CC3DF /* SEPrimesGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A21751DE174E2003CC3DF /* SEPrimesGenerator.m */; };
+		ABC290C61DE3E12600A5F991 /* SEPrimeNumberDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC290C51DE3E12600A5F991 /* SEPrimeNumberDetailViewController.m */; };
+		ABC290CB1DE3E3F000A5F991 /* SEPrimeNumberDetailStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC290CA1DE3E3F000A5F991 /* SEPrimeNumberDetailStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 		AB7A21351DE16D23003CC3DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AB7A21371DE16D23003CC3DF /* SEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SEAppDelegate.h; sourceTree = "<group>"; };
 		AB7A21381DE16D23003CC3DF /* SEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SEAppDelegate.m; sourceTree = "<group>"; };
-		AB7A213E1DE16D23003CC3DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB7A213E1DE16D23003CC3DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SEPrimesStoryboard.storyboard; sourceTree = "<group>"; };
 		AB7A21401DE16D23003CC3DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB7A21431DE16D23003CC3DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB7A21451DE16D23003CC3DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,6 +64,10 @@
 		AB7A21741DE174E2003CC3DF /* SEPrimesGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEPrimesGenerator.h; sourceTree = "<group>"; };
 		AB7A21751DE174E2003CC3DF /* SEPrimesGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEPrimesGenerator.m; sourceTree = "<group>"; };
 		AB7A21771DE177AE003CC3DF /* SEPrimesGeneratorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEPrimesGeneratorTests.m; sourceTree = "<group>"; };
+		ABC290C41DE3E12600A5F991 /* SEPrimeNumberDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEPrimeNumberDetailViewController.h; sourceTree = "<group>"; };
+		ABC290C51DE3E12600A5F991 /* SEPrimeNumberDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEPrimeNumberDetailViewController.m; sourceTree = "<group>"; };
+		ABC290CA1DE3E3F000A5F991 /* SEPrimeNumberDetailStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SEPrimeNumberDetailStoryboard.storyboard; sourceTree = "<group>"; };
+		ABC290CD1DE3E65A00A5F991 /* SEScreens.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SEScreens.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +113,9 @@
 				AB7A21381DE16D23003CC3DF /* SEAppDelegate.m */,
 				AB7A21741DE174E2003CC3DF /* SEPrimesGenerator.h */,
 				AB7A21751DE174E2003CC3DF /* SEPrimesGenerator.m */,
+				ABC290CD1DE3E65A00A5F991 /* SEScreens.h */,
 				AB7A215A1DE16E2C003CC3DF /* ViewModels */,
 				AB7A21591DE16E26003CC3DF /* Views */,
-				AB7A213D1DE16D23003CC3DF /* Main.storyboard */,
 				AB7A21401DE16D23003CC3DF /* Assets.xcassets */,
 				AB7A21421DE16D23003CC3DF /* LaunchScreen.storyboard */,
 				AB7A21451DE16D23003CC3DF /* Info.plist */,
@@ -141,6 +147,7 @@
 			children = (
 				AB7A21671DE171AC003CC3DF /* Shared */,
 				AB7A216B1DE17226003CC3DF /* Primes */,
+				ABC290C31DE3E10900A5F991 /* Prime Detail */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -176,8 +183,19 @@
 				AB7A215F1DE16F0D003CC3DF /* SEPrimesViewController.m */,
 				AB7A216C1DE1723F003CC3DF /* SEPrimeNumberCollectionViewCell.h */,
 				AB7A216D1DE1723F003CC3DF /* SEPrimeNumberCollectionViewCell.m */,
+				AB7A213D1DE16D23003CC3DF /* SEPrimesStoryboard.storyboard */,
 			);
 			name = Primes;
+			sourceTree = "<group>";
+		};
+		ABC290C31DE3E10900A5F991 /* Prime Detail */ = {
+			isa = PBXGroup;
+			children = (
+				ABC290C41DE3E12600A5F991 /* SEPrimeNumberDetailViewController.h */,
+				ABC290C51DE3E12600A5F991 /* SEPrimeNumberDetailViewController.m */,
+				ABC290CA1DE3E3F000A5F991 /* SEPrimeNumberDetailStoryboard.storyboard */,
+			);
+			name = "Prime Detail";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,7 +285,8 @@
 			files = (
 				AB7A21441DE16D23003CC3DF /* LaunchScreen.storyboard in Resources */,
 				AB7A21411DE16D23003CC3DF /* Assets.xcassets in Resources */,
-				AB7A213F1DE16D23003CC3DF /* Main.storyboard in Resources */,
+				ABC290CB1DE3E3F000A5F991 /* SEPrimeNumberDetailStoryboard.storyboard in Resources */,
+				AB7A213F1DE16D23003CC3DF /* SEPrimesStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +312,7 @@
 				AB7A21661DE16F7B003CC3DF /* SEPrimesViewModel.m in Sources */,
 				AB7A21631DE16F58003CC3DF /* SEViewModel.m in Sources */,
 				AB7A21601DE16F0D003CC3DF /* SEPrimesViewController.m in Sources */,
+				ABC290C61DE3E12600A5F991 /* SEPrimeNumberDetailViewController.m in Sources */,
 				AB7A21711DE1726E003CC3DF /* SEPrimeNumberViewModel.m in Sources */,
 				AB7A21361DE16D23003CC3DF /* main.m in Sources */,
 			);
@@ -318,12 +338,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AB7A213D1DE16D23003CC3DF /* Main.storyboard */ = {
+		AB7A213D1DE16D23003CC3DF /* SEPrimesStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				AB7A213E1DE16D23003CC3DF /* Base */,
 			);
-			name = Main.storyboard;
+			name = SEPrimesStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 		AB7A21421DE16D23003CC3DF /* LaunchScreen.storyboard */ = {
@@ -496,6 +516,7 @@
 				AB7A21551DE16D24003CC3DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB7A21561DE16D24003CC3DF /* Build configuration list for PBXNativeTarget "SeratosthenesTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +525,7 @@
 				AB7A21581DE16D24003CC3DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

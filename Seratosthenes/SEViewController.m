@@ -14,15 +14,6 @@
 
 @implementation SEViewController
 
-- (instancetype)initWithViewModel:(SEViewModel *)viewModel {
-    self = [super init];
-    if (self) {
-        _viewModel = viewModel;
-    }
-    
-    return self;
-}
-
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.viewModel willBecomeActive];
@@ -39,14 +30,34 @@
     [self.viewModel willResignActive];
 }
 
-/*
+- (void)setViewModel:(SEViewModel *)viewModel {
+    _viewModel = viewModel;
+}
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)presentScreen:(NSString *)screen withViewModel:(SEViewModel *)viewModel {
+    SEViewController *viewController = [SEViewController viewControllerFromScreen:screen withViewModel:viewModel];
+    [self.navigationController presentViewController:viewController animated:YES completion:nil];
 }
-*/
+
+- (void)pushScreen:(NSString *)screen withViewModel:(SEViewModel *)viewModel {
+    SEViewController *viewController = [SEViewController viewControllerFromScreen:screen withViewModel:viewModel];
+    [self.navigationController pushViewController:viewController animated:YES];
+}
+
+- (void)dismissScreen {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
++ (SEViewController *)viewControllerFromScreen:(NSString *)screen withViewModel:(SEViewModel *)viewModel {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:[screen stringByReplacingOccurrencesOfString:@"ViewController" withString:@"Storyboard"] bundle:nil];
+    SEViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:screen];
+    if (viewModel) {
+        viewController.viewModel = viewModel;
+    }
+    return viewController;
+}
+
 
 @end

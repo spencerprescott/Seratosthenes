@@ -13,7 +13,7 @@
         <!--Prime Numbers-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SEPrimesViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SEPrimesViewController" id="BYZ-38-t0r" customClass="SEPrimesViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -84,15 +84,15 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cic-V7-V0l" firstAttribute="height" secondItem="9CH-4O-Mcu" secondAttribute="height" id="0is-5G-IFT"/>
-                            <constraint firstItem="cic-V7-V0l" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2yD-gC-yJc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4us-fJ-0Gc" secondAttribute="bottom" id="3qj-Iy-ffy"/>
+                            <constraint firstItem="9CH-4O-Mcu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="1" id="C2A-El-cfa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9CH-4O-Mcu" secondAttribute="trailing" id="DK4-PQ-JRo"/>
                             <constraint firstItem="9CH-4O-Mcu" firstAttribute="leading" secondItem="cic-V7-V0l" secondAttribute="trailing" constant="5" id="KwN-R1-Um7"/>
                             <constraint firstItem="cic-V7-V0l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="OWX-iA-ej3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4us-fJ-0Gc" secondAttribute="trailing" id="T6B-mc-WN3"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4us-fJ-0Gc" secondAttribute="bottom" id="TX6-TW-Zvw"/>
-                            <constraint firstItem="9CH-4O-Mcu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="1" id="j5C-ct-CPO"/>
                             <constraint firstItem="4us-fJ-0Gc" firstAttribute="top" secondItem="cic-V7-V0l" secondAttribute="bottom" id="mIh-yu-5OZ"/>
                             <constraint firstItem="4us-fJ-0Gc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qny-MK-yPx"/>
+                            <constraint firstItem="cic-V7-V0l" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="r29-sD-Gbt"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Prime Numbers" id="NvK-pL-Dl6"/>
@@ -108,6 +108,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Ktn-7R-vMf">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="InK-aq-UDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BIy-kB-AD2" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ms5-il-jjJ">
@@ -119,7 +120,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="eXa-3J-jqq"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="InK-aq-UDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="-543.77811094452773"/>
         </scene>
