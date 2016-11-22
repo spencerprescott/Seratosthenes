@@ -24,6 +24,7 @@
 		AB7A21791DE177E9003CC3DF /* SEPrimesGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A21751DE174E2003CC3DF /* SEPrimesGenerator.m */; };
 		ABC290C61DE3E12600A5F991 /* SEPrimeNumberDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC290C51DE3E12600A5F991 /* SEPrimeNumberDetailViewController.m */; };
 		ABC290CB1DE3E3F000A5F991 /* SEPrimeNumberDetailStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC290CA1DE3E3F000A5F991 /* SEPrimeNumberDetailStoryboard.storyboard */; };
+		ABC290D11DE3E9C600A5F991 /* UIColor+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC290D01DE3E9C600A5F991 /* UIColor+Utilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		ABC290C51DE3E12600A5F991 /* SEPrimeNumberDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEPrimeNumberDetailViewController.m; sourceTree = "<group>"; };
 		ABC290CA1DE3E3F000A5F991 /* SEPrimeNumberDetailStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SEPrimeNumberDetailStoryboard.storyboard; sourceTree = "<group>"; };
 		ABC290CD1DE3E65A00A5F991 /* SEScreens.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SEScreens.h; sourceTree = "<group>"; };
+		ABC290CF1DE3E9C600A5F991 /* UIColor+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utilities.h"; sourceTree = "<group>"; };
+		ABC290D01DE3E9C600A5F991 /* UIColor+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utilities.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 				AB7A21741DE174E2003CC3DF /* SEPrimesGenerator.h */,
 				AB7A21751DE174E2003CC3DF /* SEPrimesGenerator.m */,
 				ABC290CD1DE3E65A00A5F991 /* SEScreens.h */,
+				ABC290CF1DE3E9C600A5F991 /* UIColor+Utilities.h */,
+				ABC290D01DE3E9C600A5F991 /* UIColor+Utilities.m */,
 				AB7A215A1DE16E2C003CC3DF /* ViewModels */,
 				AB7A21591DE16E26003CC3DF /* Views */,
 				AB7A21401DE16D23003CC3DF /* Assets.xcassets */,
@@ -306,6 +311,7 @@
 			files = (
 				AB7A216A1DE171C0003CC3DF /* SECollectionViewCell.m in Sources */,
 				AB7A21761DE174E2003CC3DF /* SEPrimesGenerator.m in Sources */,
+				ABC290D11DE3E9C600A5F991 /* UIColor+Utilities.m in Sources */,
 				AB7A21391DE16D23003CC3DF /* SEAppDelegate.m in Sources */,
 				AB7A215D1DE16EFF003CC3DF /* SEViewController.m in Sources */,
 				AB7A216E1DE1723F003CC3DF /* SEPrimeNumberCollectionViewCell.m in Sources */,

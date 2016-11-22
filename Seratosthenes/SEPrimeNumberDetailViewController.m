@@ -19,8 +19,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor colorWithHue:self.viewModel.hue saturation:self.viewModel.saturation brightness:self.viewModel.brightness alpha:1];
-    self.primeNumberLabel.text = self.viewModel.numberString;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,8 +26,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)setViewModel:(SEViewModel *)viewModel {
+- (void)setViewModel:(SEPrimeNumberViewModel *)viewModel {
     [super setViewModel:viewModel];
+    self.view.backgroundColor = [UIColor se_colorFromPrimeNumberViewModel:viewModel];
+    self.primeNumberLabel.text = viewModel.numberString;
 }
 
 /*

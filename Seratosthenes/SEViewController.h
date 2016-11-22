@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SEScreens.h"
+#import "UIColor+Utilities.h"
 @class SEViewModel;
 
 @interface SEViewController : UIViewController
