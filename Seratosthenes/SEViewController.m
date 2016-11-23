@@ -34,30 +34,5 @@
     _viewModel = viewModel;
 }
 
-#pragma mark - Navigation
-
-- (void)presentScreen:(NSString *)screen withViewModel:(SEViewModel *)viewModel {
-    SEViewController *viewController = [SEViewController viewControllerFromScreen:screen withViewModel:viewModel];
-    [self.navigationController presentViewController:viewController animated:YES completion:nil];
-}
-
-- (void)pushScreen:(NSString *)screen withViewModel:(SEViewModel *)viewModel {
-    SEViewController *viewController = [SEViewController viewControllerFromScreen:screen withViewModel:viewModel];
-    [self.navigationController pushViewController:viewController animated:YES];
-}
-
-- (void)dismissScreen {
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-+ (SEViewController *)viewControllerFromScreen:(NSString *)screen withViewModel:(SEViewModel *)viewModel {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:[screen stringByReplacingOccurrencesOfString:@"ViewController" withString:@"Storyboard"] bundle:nil];
-    SEViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:screen];
-    if (viewModel) {
-        viewController.viewModel = viewModel;
-    }
-    return viewController;
-}
-
 
 @end

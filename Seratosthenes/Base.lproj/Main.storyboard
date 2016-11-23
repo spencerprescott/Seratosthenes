@@ -13,7 +13,7 @@
         <!--Prime Numbers-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="SEPrimesViewController" id="BYZ-38-t0r" customClass="SEPrimesViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SEPrimesViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -72,6 +72,7 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="numberLabel" destination="eQZ-7g-dNE" id="K5U-8y-ufY"/>
+                                            <segue destination="dlq-6s-P8J" kind="show" identifier="PrimeNumberDetail" id="a0U-yg-1oH"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -104,6 +105,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+        </scene>
+        <!--Prime Number Detail View Controller-->
+        <scene sceneID="3Qh-Ib-mUE">
+            <objects>
+                <viewController id="dlq-6s-P8J" customClass="SEPrimeNumberDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JWy-rN-RgW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dr9-GX-VeR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nbv-2R-lgZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXg-uU-2OO">
+                                <rect key="frame" x="182" y="323" width="10.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qXg-uU-2OO" firstAttribute="centerX" secondItem="Nbv-2R-lgZ" secondAttribute="centerX" id="dDY-A9-CS1"/>
+                            <constraint firstItem="qXg-uU-2OO" firstAttribute="centerY" secondItem="Nbv-2R-lgZ" secondAttribute="centerY" id="goV-fY-tP7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VpN-Dk-TvD"/>
+                    <connections>
+                        <outlet property="primeNumberLabel" destination="qXg-uU-2OO" id="1mm-Hw-UAU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tk1-fX-KwG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1854" y="200"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ktn-7R-vMf">

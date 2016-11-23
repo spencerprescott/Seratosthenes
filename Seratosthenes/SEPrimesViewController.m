@@ -9,6 +9,7 @@
 #import "SEPrimesViewController.h"
 #import "SEPrimesViewModel.h"
 #import "SEPrimeNumberCollectionViewCell.h"
+#import "SEPrimeNumberDetailViewController.h"
 
 @interface SEPrimesViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *primesTextField;
@@ -69,9 +70,9 @@ static void *SEPrimesContext = &SEPrimesContext;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    
-    [self presentScreen:SEPrimeNumberDetailScreen withViewModel:self.viewModel.primeNumberViewModels[indexPath.item]];
+    [self.primesTextField resignFirstResponder];
 }
+
 
 #pragma mark - UIScrollViewDelegate
 
@@ -100,14 +101,13 @@ static void *SEPrimesContext = &SEPrimesContext;
     [self.collectionView reloadData];
 }
 
-/*
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"PrimeNumberDetail"]) {
+        SEPrimeNumberDetailViewController *viewController = [segue destinationViewController];
+        viewController.viewModel = self.viewModel.primeNumberViewModels[[self.collectionView indexPathForCell:(SECollectionViewCell *)sender].item];
+    }
 }
-*/
 
 @end
